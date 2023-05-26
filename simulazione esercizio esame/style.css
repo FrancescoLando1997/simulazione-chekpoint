@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(198, 198, 198);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.div1{
+    height: 2rem;
+    width: 15rem;
+    display: flex;
+    background-color: rgb(94, 94, 94);
+}
+
+.cont{
+    display: flex;
+    align-items: flex-end;
+}
+
+.div2, .div3{
+    display: flex;
+    align-items: flex-end;
+    margin: 1rem;
+    background-color: rgb(36, 36, 36);
+    height: 2rem;
+    width: 4rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.center-card{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    align-items: center;
+}
+
+.center1{
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(120, 120, 120);
+
+}
+
+.center2{
+    margin-top: 1rem;
+    width: 26rem;
+    height: 10rem;
+    background-color: rgb(31, 31, 31);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    background-color: rgb(101, 101, 101);
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    height: 2rem;
+    width: 2rem;
+    margin: 10px;
+    align-self: center;
+    display: none;
+
+}
+
+@media(max-width:760px){
+button{
+    display: inline;
+}
+
+.div1{
+    display: none;
+}
+
+}
+
+@media(max-width:600px){
+    .div2,.div3{
+        display: none;
+    }
+
+}
