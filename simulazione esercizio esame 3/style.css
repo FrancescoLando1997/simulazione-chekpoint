@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    background-color: gray;
+    height: 100vh;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.side{
+    background-color: blue;
+    height: 3rem;
+    width: 7rem;
+    margin: 50px;
+}
+
+nav{
+ background-color: rgb(178, 178, 178);
+ height: 5rem;
+ width: 100%;
+ display: flex;
+ justify-content: right;
+ align-items: center;
+
+}
+
+button{
+    border-radius: 3px;
+    height: 3rem;
+    width: 3rem;
+    margin: 10px;
+    background-color: rgb(87, 87, 87);
+}
+
+
+main{
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    background-color: rgb(157, 125, 113);
+    width: 30rem;
+    height: 20rem;
+    margin: 50%;
+    border-radius: 10px;
+}
+
+.center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3px;
+
+}
+
+.center > button{
+
+    height: 3rem;
+    width: 5rem;
+}
+
+button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.center > input{
+
+    height:2rem;
+    width: 17rem;
+    border-radius: 6px;
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 10rem;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media(max-width: 760px){
+
+   aside{
+    background-color: transparent;
+   }
+
+   .side{
+    z-index: 1;
+    margin-top: 16px;
+   }
+
+   nav{
+    position: absolute;
+    width: 100%;
+    margin-left: 1px;
+
+   }
+
+   body{
+    display: flex;
+    flex-direction: column;
+   }
+
+  
+
+   main{
+    background-color: rgb(139, 139, 139);
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    width: 100%;
+    border-radius: 0px;
+
+    
+   }
+
+   .center{
+    align-items: center;
+   }
+
+   .ok{
+    display: none;
+   }
+
+   .logo{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+   }
+
+}
